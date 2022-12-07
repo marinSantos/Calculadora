@@ -1,3 +1,3 @@
 # Calculadora
-Calculadora comum, com botão que alterna entre tema claro e escuro.<br/><br/>
+Calculadora comum, com um botão que alterna entre os temas claro e escuro.<br/><br/>
 [Clique aqui para acessar a calculadora: ](https://marinsantos.github.io/Calculadora/)
