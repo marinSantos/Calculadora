@@ -16,10 +16,9 @@ function calculate() {
 
 }
 
-input.addEventListener('keydown', function (ev) {
+document.addEventListener('keydown', function (ev) {
   ev.preventDefault()
-  copyToClipboard.innerText = 'Copy'
-  copyToClipboard.classList.remove('success')
+
   if (allowedKeys.includes(ev.key)) {
     input.value += ev.key
     return
@@ -34,6 +33,7 @@ input.addEventListener('keydown', function (ev) {
 
 
 })
+/
 
 document.querySelectorAll('.charKey').forEach(function (item) {
   item.addEventListener('click', function () {
