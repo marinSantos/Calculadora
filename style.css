@@ -4,98 +4,94 @@
     padding: 0;
   }
   
-  :root {
-    --bg-color: #212529;
-    --border-color: #666;
-    --font-color: #f1f5f9;
-    --primary-color: #4dff91;
-    --error-color: #ff0043;
-  }
   
   body {
-    background-color: var(--bg-color);
-    color: var(--font-color);
+    background-color: #212529;
+    color: #f1f5f9;
     font-family: "Ubuntu", sans-serif;
   }
   
   main {
-    display: block;
-    margin: 0 auto;
-    max-width: 40rem;
-    padding: 0 1.5rem 2.5rem;
-    position: relative;
+    max-width: 26rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color:#f1f5f9;
+    padding:1.5rem;
+    border-radius: 25px;
   }
   
   header {
     padding: 2rem 0;
   }
   
-  #themeSwitcher {
-    background-color: var(--bg-color);
-    border: .125rem solid var(--font-color);
-    color: var(--font-color);
-  }
-  
-  #themeSwitcher:hover {
-    background-color: var(--font-color);
-    color: var(--bg-color);
-  }
+
   
   button {
-    background-color: var(--primary-color);
+    background-color: #0A0A23;
     border: none;
     border-radius: .25rem;
     font-weight: 700;
     padding: .5rem 1rem;
     transition: .15s;
+    border-radius: 20px;
   }
   
   input {
-    background-color: var(--bg-color);
-    border: 2px solid var(--border-color);
+    background-color: #1B1B32;
+    border: 2px solid #6666;
     border-radius: .5rem;
-    color: var(--font-color);
+    color: #f1f5f9;
     display: block;
     font-size: 1.75rem;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1.1rem;
     text-align: end;
     width: 100%;
+    border-radius: 40px;
   }
   
   #keys {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: .7rem .5rem;
     margin: 2rem 0;
   }
   
   #keys button {
-    color: var(--bg-color);
+    color: #f1f5f9;
     cursor: pointer;
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.7rem;
+    padding: 1.4rem 1rem;
   }
-  
+  .operators{
+  background-color: #00471B !important;
+  }
+  .operators:hover{
+    background-color: #036e2c !important;
+  }
   #keys button:hover {
-    filter: brightness(0.8);
+    background-color: #4d4d94;
   }
   
   #result {
     border-width: 2px 2px 2px 0;
-    border-radius: 0 .5rem .5rem 0;
+    border-radius: 0px 40px 40px 0px;
   }
   
   #copyToClipboard {
     background-color: transparent;
-    border: solid var(--border-color);
+    border: solid #6666;
     border-width: 2px;
     border-radius: .5rem 0 0 .5rem;
-    color: var(--font-color);
+    color: #0A0A23;
     cursor: pointer;
     display: block;
     height: 4.25rem;
     width: 6rem;
+     border-radius: 40px 0px 0px 40px;
   }
   
   .flex {
@@ -111,10 +107,10 @@
   }
   
   .error {
-    background-color: var(--error-color);
+    color: white;
   }
   
   .success {
-    border-color: var(--primary-color) !important;
-    color: var(--primary-color) !important;
+    border-color: #0A0A23 !important;
+    color: #0A0A23 !important;
   }
